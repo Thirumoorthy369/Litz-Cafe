@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <!-- basic -->
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <!-- mobile metas -->
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+      <!-- site metas -->
+      <title>LITZ COFFEE</title>
+      <meta name="keywords" content="">
+      <meta name="description" content="">
+      <meta name="author" content="">
+      <!-- bootstrap css -->
+      <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+      <!-- style css -->
+      <link rel="stylesheet" type="text/css" href="css/style.css">
+      <!-- Responsive-->
+      <link rel="stylesheet" href="css/responsive.css">
+      <!-- fevicon -->
+      <link rel="icon" href="data:image/png;base64,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" type="image/gif" />
+      <!-- Scrollbar Custom CSS -->
+      <link rel="stylesheet" href="css/jquery.mCustomScrollbar.min.css">
+      <!-- Tweaks for older IEs-->
+      <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
+      <!-- owl stylesheets --> 
+      <link rel="stylesheet" href="css/owl.carousel.min.css">
+      <link rel="stylesheet" href="css/owl.theme.default.min.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css" media="screen">
+   </head>
+   <body>
+      <!--header section start -->
+      <div class="header_section">
+         <div class="container-fluid">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+               <div class="logo"><a href="index.html"><img src="https://tse2.mm.bing.net/th?id=OIP.4fQuUiBRDzor43OFDAMNNAHaEK&pid=Api&P=0&h=180" height="100px" width="100px"></a></div>
+               <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav"aria-expanded="false" aria-label="Toggle navigation">
+               <span class="navbar-toggler-icon"></span>
+               </button>
+               <div class="collapse navbar-collapse" id="navbarNav">
+                  <ul class="navbar-nav ml-auto">
+                     <li class="nav-item active">
+                        <a class="nav-link" href="index.html">Home</a>
+                     </li>
+                     <li class="nav-item">
+                        <a class="nav-link" href="about.html">About Us</a>
+                     </li>
+                     <li class="nav-item">
+                        <a class="nav-link" href="gallery.html">Gallery</a>
+                     </li>
+                     <li class="nav-item">
+                        <a class="nav-link" href="services.html">Services</a>
+                     </li>
+                     <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact Us</a>
+                     </li>
+                     <li class="nav-item">
+                        <a class="nav-link" href="#"><i class="fa fa-search" aria-hidden="true"></i></a>
+                     </li>
+                  </ul>
+               </div>
+            </nav>
+         </div>
+      </div>
+      <!--header section end -->
+      <!-- banner section start -->
+      <div class="banner_section layout_padding">
+         <div class="container">
+            <div id="main_slider" class="carousel slide" data-ride="carousel">
+               <div class="carousel-inner">
+                  <div class="carousel-item active">
+                     <div class="row">
+                        <div class="col-sm-12">
+                           <div class="banner_taital">
+                              <h1 class="Delicious_text">Delicious</h1>
+                              <h1 class="coffee_text">Coffee Cafe</h1>
+                              <p class="there_text">"Even bad coffee is better… than no coffee at all" </p>
+                              <div class="learnmore_bt"><a href="#">Learn More</a></div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="carousel-item">
+                     <div class="row">
+                        <div class="col-sm-12">
+                           <div class="banner_taital">
+                              <h1 class="Delicious_text">Delicious </h1>
+                              <h1 class="coffee_text">Coffee Shop</h1>
+                              <p class="there_text">“Life is like coffee, the darker it gets, the more it energizes” </p>
+                              <div class="learnmore_bt"><a href="#">Learn More</a></div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="carousel-item">
+                     <div class="row">
+                        <div class="col-sm-12">
+                           <div class="banner_taital">
+                              <h1 class="Delicious_text">Delicious </h1>
+                              <h1 class="coffee_text">Coffee Shop</h1>
+                              <p class="there_text">"No one can understand the truth until he drinks of coffee’s frothy goodness" </p>
+                              <div class="learnmore_bt"><a href="#">Learn More</a></div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <a class="carousel-control-prev" href="#main_slider" role="button" data-slide="prev">
+               <i class="fa fa-angle-left"></i>
+               </a>
+               <a class="carousel-control-next" href="#main_slider" role="button" data-slide="next">
+               <i class="fa fa-angle-right"></i>
+               </a>
+            </div>
+         </div>
+      </div>
+      <!-- banner section end -->
+      <!-- about section start -->
+      <div class="about_section layout_padding">
+         <div class="container">
+            <div class="row">
+               <div class="col-md-6">
+                  <div class="about_taital_main">
+                     <div class="about_taital">About Us</div>
+                     <p class="about_text">The delicious and extrodinary flavours of coffees are available.</p>
+                     <p class="about_text">“You can never get a cup of tea large enough or a book long enough to suit me.” Come to LITZ Cafe , drink a coffee , Feel it light. </p>
+                     <div class="read_bt"><a href="#">Read More</a></div>
+                  </div>
+               </div>
+               <div class="col-md-6">
+                  <div class="about_img"><img src="images/about-img.png"></div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- about section end -->
+      <!-- gallery section start -->
+      <div class="gallery_section layout_padding">
+         <div class="container">
+            <div class="row">
+               <div class="col-sm-12">
+                  <h1 class="gallery_taital">Our Gallery</h1>
+                  <p class="gallery_text">Lorem Ipsum is simply dummy text of printing typesetting ststry lorem Ipsum the industry'ndard dummy text ever since of the 1500s, when an unknown printer took a galley of type and scra make a type specimen book. It has</p>
+               </div>
+            </div>
+            <div class="">
+               <div class="gallery_section_2">
+                  <div class="row">
+                     <div class="col-md-4">
+                        <div class="container_main">
+                           <img src="images/img-1.png" alt="Avatar" class="image">
+                           <div class="overlay">
+                              <div class="text"><a href="#"><i class="fa fa-search" aria-hidden="true"></i></a></div>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="col-md-4">
+                        <div class="container_main">
+                           <img src="images/img-2.png" alt="Avatar" class="image">
+                           <div class="overlay">
+                              <div class="text"><a href="#"><i class="fa fa-search" aria-hidden="true"></i></a></div>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="col-md-4">
+                        <div class="container_main">
+                           <img src="images/img-3.png" alt="Avatar" class="image">
+                           <div class="overlay">
+                              <div class="text"><a href="#"><i class="fa fa-search" aria-hidden="true"></i></a></div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="gallery_section_2">
+                  <div class="row">
+                     <div class="col-md-4">
+                        <div class="container_main">
+                           <img src="images/img-4.png" alt="Avatar" class="image">
+                           <div class="overlay">
+                              <div class="text"><a href="#"><i class="fa fa-search" aria-hidden="true"></i></a></div>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="col-md-4">
+                        <div class="container_main">
+                           <img src="images/img-5.png" alt="Avatar" class="image">
+                           <div class="overlay">
+                              <div class="overlay">
+                                 <div class="text"><a href="#"><i class="fa fa-search" aria-hidden="true"></i></a></div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="col-md-4">
+                        <div class="container_main">
+                           <img src="images/img-6.png" alt="Avatar" class="image">
+                           <div class="overlay">
+                              <div class="overlay">
+                                 <div class="text"><a href="#"><i class="fa fa-search" aria-hidden="true"></i></a></div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="gallery_section_2">
+                  <div class="row">
+                     <div class="col-md-4">
+                        <div class="container_main">
+                           <img src="images/img-7.png" alt="Avatar" class="image">
+                           <div class="overlay">
+                              <div class="text"><a href="#"><i class="fa fa-search" aria-hidden="true"></i></a></div>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="col-md-4">
+                        <div class="container_main">
+                           <img src="images/img-8.png" alt="Avatar" class="image">
+                           <div class="overlay">
+                              <div class="text"><a href="#"><i class="fa fa-search" aria-hidden="true"></i></a></div>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="col-md-4">
+                        <div class="container_main">
+                           <img src="images/img-9.png" alt="Avatar" class="image">
+                           <div class="overlay">
+                              <div class="text"><a href="#"><i class="fa fa-search" aria-hidden="true"></i></a></div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="seemore_bt"><a href="#">See More</a></div>
+         </div>
+      </div>
+      <!-- gallery section end -->
+      <!-- services section start -->
+      <div class="services_section layout_padding">
+         <div class="container">
+            <div class="row">
+               <div class="col-sm-12">
+                  <h1 class="services_taital">Services</h1>
+                  <p class="services_text">Typesetting industry lorem Ipsum is simply dummy text of the </p>
+               </div>
+            </div>
+            <div class="services_section_2">
+               <div class="row">
+                  <div class="col-lg-4 col-sm-12 col-md-4">
+                     <div class="box_main active">
+                        <div class="house_icon">
+                           <img src="images/icon1.png" class="image_1">
+                           <img src="images/icon1.png" class="image_2">
+                        </div>
+                        <h3 class="decorate_text">Original Coffee</h3>
+                        <p class="tation_text">Exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea </p>
+                        <div class="readmore_bt"><a href="#">Read More</a></div>
+                     </div>
+                  </div>
+                  <div class="col-lg-4 col-sm-12 col-md-4">
+                     <div class="box_main">
+                        <div class="house_icon">
+                           <img src="images/icon2.png" class="image_1">
+                           <img src="images/icon2.png" class="image_2">
+                        </div>
+                        <h3 class="decorate_text">20 Coffee Flavors</h3>
+                        <p class="tation_text">Exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea </p>
+                        <div class="readmore_bt"><a href="#">Read More</a></div>
+                     </div>
+                  </div>
+                  <div class="col-lg-4 col-sm-12 col-md-4">
+                     <div class="box_main">
+                        <div class="house_icon">
+                           <img src="images/icon3.png" class="image_1">
+                           <img src="images/icon3.png" class="image_2">
+                        </div>
+                        <h3 class="decorate_text">Pleasant Abient</h3>
+                        <p class="tation_text">Exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea </p>
+                        <div class="readmore_bt"><a href="#">Read More</a></div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- services section end -->
+      <!-- testimonial section start -->
+      <!-- <div class="client_section layout_padding">
+         <div class="container">
+            <div class="row">
+               <div class="col-sm-12">
+                  <h1 class="client_taital">Testimonial</h1>
+                  <p class="client_text">Eeven slightly believable. If you are going to use a passage of Lorem Ipsum, you need to</p>
+               </div>
+            </div>
+         </div>
+      <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+          <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="client_section_2">
+                <div class="container">
+                   <div class="row">
+                      <div class="col-md-12">
+                         <div class="testimonial_section_2">
+                            <h4 class="client_name_text">Monila <span class="quick_icon"><img src="images/quick-icon.png"></span></h4>
+                            <p class="customer_text">many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All themany variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some embarrassing hidden in the middle of text. All the</p>
+                         </div>
+                      </div>
+                   </div>
+                </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="client_section_2">
+                <div class="container">
+                   <div class="row">
+                      <div class="col-md-12">
+                         <div class="testimonial_section_2">
+                            <h4 class="client_name_text">Monila <span class="quick_icon"><img src="images/quick-icon.png"></span></h4>
+                            <p class="customer_text">many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All themany variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some embarrassing hidden in the middle of text. All the</p>
+                         </div>
+                      </div>
+                   </div>
+                </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="client_section_2">
+                <div class="container">
+                   <div class="row">
+                      <div class="col-md-12">
+                         <div class="testimonial_section_2">
+                            <h4 class="client_name_text">Monila <span class="quick_icon"><img src="images/quick-icon.png"></span></h4>
+                            <p class="customer_text">many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All themany variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some embarrassing hidden in the middle of text. All the</p>
+                         </div>
+                      </div>
+                   </div>
+                </div>
+            </div>
+          </div>
+        </div>
+      </div> 
+     </div>-->
+      <!-- testimonial section end -->
+      <!-- contact section start -->
+      <div class="contact_section layout_padding">
+         <div class="container">
+            <h1 class="contact_text">Contact Us</h1>
+         </div>
+      </div>
+      <div class="contact_section_2 layout_padding">
+         <div class="container-fluid">
+            <div class="row">
+               <div class="col-md-6 padding_0">
+                  <div class="mail_section">
+                     <div class="email_text">
+                        <div class="form-group">
+                           <input type="text" class="email-bt" placeholder="Name" name="Email">
+                        </div>
+                        <div class="form-group">
+                           <input type="text" class="email-bt" placeholder="Email" name="Email">
+                        </div>
+                        <div class="form-group">
+                           <input type="text" class="email-bt" placeholder="Phone Numbar" name="Email">
+                        </div>
+                        <div class="form-group">
+                           <textarea class="message-bt" placeholder="Message" rows="5" id="comment" name="Message"></textarea>
+                        </div>
+                        <div class="send_btn">
+                           <div type="text" class="main_bt"><a href="#">SEND</a></div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-md-6 padding_0">
+                  <div class="map-responsive">
+                     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d95880.235287409!2d77.04341397618566!3d10.998834589439081!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba857bc9b5ea9af%3A0x317ea10df48c4678!2sCoimbatore%20International%20Airport!5e0!3m2!1sen!2sin!4v1720853946190!5m2!1sen!2sin" width="600" height="500" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                        <!-- " width="600" height="508" frameborder="0" style="border:0; width: 100%;" allowfullscreen></iframe> -->
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- contact section end -->
+      <!-- footer section start -->
+      <div class="footer_section layout_padding">
+         <div class="container">
+            <div class="row">
+               <div class="col-lg-3 col-sm-6">
+                  <h3 class="useful_text">About</h3>
+                  <p class="footer_text">Indian filter coffee is a coffee drink made by mixing hot milk and sugar with the infusion obtained by percolation brewing of finely ground coffee powder with chicory in a traditional Indian filter.    It has been described as "hot, strong, sweet and topped with bubbly froth" and is known as filter kaapi in India. It's available at LITZ CAFE</p>
+               </div>
+               <div class="col-lg-3 col-sm-6">
+                  <h3 class="useful_text">Menu</h3>
+                  <div class="footer_menu">
+                     <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                     </ul>
+                  </div>
+               </div>
+               <div class="col-lg-3 col-sm-6">
+                  <h1 class="useful_text">Useful Link</h1>
+                  <p class="dummy_text">Adipiscing Elit, sed do Eiusmod Tempor incididunt </p>
+               </div>
+               <div class="col-lg-3 col-sm-6">
+                  <h1 class="useful_text">Contact Us</h1>
+                  <div class="location_text">
+                     <ul>
+                        <li>
+                           <a href="#">
+                           <i class="fa fa-map-marker" aria-hidden="true"></i><span class="padding_left_10">Address : LITZ cafe,Hope college,Coimbatore-641004.</span>
+                           </a>
+                        </li>
+                        <li>
+                           <a href="#">
+                           <i class="fa fa-phone" aria-hidden="true"></i><span class="padding_left_10">Call : +91 9715135532</span>
+                           </a>
+                        </li>
+                        <li>
+                           <a href="#">
+                           <i class="fa fa-envelope" aria-hidden="true"></i><span class="padding_left_10">Email : litzcafe@gmail.com</span>
+                           </a>
+                        </li>
+                     </ul>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- footer section end -->
+      <!-- copyright section start -->
+      <div class="copyright_section">
+         <div class="container">
+            <p class="copyright_text">2024 All Rights Reserved.<a href="https://html.design"></a></p>
+         </div>
+      </div>
+      <!-- copyright section end -->
+      <!-- Javascript files-->
+      <script src="js/jquery.min.js"></script>
+      <script src="js/popper.min.js"></script>
+      <script src="js/bootstrap.bundle.min.js"></script>
+      <script src="js/jquery-3.0.0.min.js"></script>
+      <script src="js/plugin.js"></script>
+      <!-- sidebar -->
+      <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+      <script src="js/custom.js"></script>     
+   </body>
+</html>
